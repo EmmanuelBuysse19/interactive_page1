@@ -11,11 +11,21 @@
 @keyframes headerColor {
     from {color: red;}
     to {color: blue;}
+    0% {background-color: aquamarine;}
+    20% {background-color: blue;}
+    40% {background-color: yellowgreen;}
+    60% {background-color: violet;}
+    80% {background-color: royalblue;}
+    100% {background-color: burlywood;}
 }
 header {
     background-color: aquamarine;
     text-align: center;
     animation-name: headerColor;
     animation-duration:5s;
+}
+
+body {
+    text-align: center;
 }
 
