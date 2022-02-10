@@ -1,0 +1,14 @@
+/* this sets the navigation bar on flex*/
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    display: flex;
+}
+header {
+    background-color: aquamarine;
+    text-align: center;
+}
+
