@@ -7,8 +7,15 @@
 .links {
     display: flex;
 }
+/* adding css keyframes animation*/
+@keyframes headerColor {
+    from {color: red;}
+    to {color: blue;}
+}
 header {
     background-color: aquamarine;
     text-align: center;
+    animation-name: headerColor;
+    animation-duration:5s;
 }
 
