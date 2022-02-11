@@ -170,3 +170,13 @@
     let canvass = document.getElementById('mycanvas');
     let heightRatio = 1.5;
     canvass.height = canvass.width * heightRatio;
+
+    document.getElementById("readmore").onclick = function () {
+        location.href = "index.html";
+        }
+    
+    document.getElementById("readmore").onmouseup = function () {
+        document.getElementById("readmore").style.backgroundColor = "green";
+        }
+    
+

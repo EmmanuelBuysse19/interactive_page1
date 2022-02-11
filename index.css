@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0px;
 }
 
 /* adding css keyframes animation*/
@@ -23,6 +24,9 @@ header {
     animation-name: headerColor;
     animation-duration:5s;
     font-size: 25px;
+    margin-top: 0px;
+    padding-top: 5px;
+    color: red;
 }
 
 body {
@@ -84,4 +88,7 @@ a:hover{
     color:#00ff00;
 }
 
-
+button {
+    border-radius: 20%;
+    background-color:blanchedalmond;
+}
