@@ -29,6 +29,53 @@ for(let i = 0; i < brickColumnCount; i++){
     }
 }
 
+// adding eventlisteners for keyboard and mouse actions //
+document.addEventListener("keydown", keyDownHandler, false);
+document.addEventListener("keyup", keyUpHandler, false);
+document.addEventListener("mousemove", mouseMoveHandler, false);
 
+// adding eventhandlers //
+function keyDownHandler(e) {
+    if(e.code == "ArrowRight") {
+        rightPressed = true;
+    }else if(e.code == "ArrowLeft") {
+        leftPressed = true;
+    }
+}
 
+function keyUpHandler(e) {
+    if(e.code == "ArrowRight") {
+        rightPressed = false;
+    }else if(e.code == "ArrowLeft") {
+        rightPressed = false;
+    }
+}
+
+function mouseMoveHandler(e) {
+    let relativeX = e.clientX - canvas.offsetLeft;
+    if(relativeX > 0 && relativeX < canvas.width) {
+        ppaddleX = relativeX - paddleWidth/2;
+    }
+}
+
+// defining a function in case of collisions //
+
+const collisionDetection = () => {
+    for(let i = 0; i < brickColumnCount; i++) {
+        for(let j = 0; j < brickRowCount; j++) {
+            let b = bricks[i][j];
+            if(b.status == 1) {
+                if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight){
+                   dy = -dy;
+                   b.status = 0;
+                   score++;
+                   if(score == brickRowCount*brickColumnCount) {
+                    alert("We HAVE A WINNER, CONGRATS!");
+                    document.location.reload();
+                   }
+                }
+            }
+        }
+    }
+}
 
