@@ -172,7 +172,7 @@
     canvass.height = canvass.width * heightRatio;
 
     document.getElementById("readmore").onclick = function () {
-        location.href = "index.html";
+        location.href = "my_dreams.html";
         }
     
     document.getElementById("readmore").onmouseup = function () {
