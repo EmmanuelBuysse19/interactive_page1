@@ -1,11 +1,12 @@
 /* this sets the navigation bar on flex*/
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .links {
-    display: flex;
+    color: yellow;;
 }
 /* adding css keyframes animation*/
 @keyframes headerColor {
@@ -27,9 +28,39 @@ header {
 
 body {
     text-align: center;
+    overflow: auto;
 }
 
 #mycanvas {
-    display: block;
-    margin: 0 auto;
+    width: 15%;
 }
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-size: 16px;
+  }
+  #readmore {
+      position: fixed;
+      top: 95%;
+      left: 48%;
+      text-align: center;
+  }
