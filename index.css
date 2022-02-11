@@ -5,9 +5,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.links {
-    color: yellow;;
-}
+
 /* adding css keyframes animation*/
 @keyframes headerColor {
     from {color: red;}
@@ -24,6 +22,7 @@ header {
     text-align: center;
     animation-name: headerColor;
     animation-duration:5s;
+    font-size: 25px;
 }
 
 body {
@@ -32,7 +31,7 @@ body {
 }
 
 #mycanvas {
-    width: 13%;
+    width: 14%;
 }
 
 video {
@@ -58,11 +57,31 @@ video {
     font-size: 2rem;
     font-size: 16px;
   }
-  #readmore {
-      position: fixed;
-      top: 95%;
-      left: 48%;
-      text-align: center;
-  }
+#readmore {
+    position: fixed;
+    top: 95%;
+    left: 48%;
+    text-align: center;
+}
+code {
+    color: yellow;
+}
+button:hover {
+    background-color: aquamarine;
+    border-radius: 70%;
+    color: red;
+}
+a:link{
+    text-decoration:none;
+    color:#008b45;
+}
+    
+a:visited {
+    color: yellow;
+}   
 
-  
+a:hover{
+    color:#00ff00;
+}
+
+
