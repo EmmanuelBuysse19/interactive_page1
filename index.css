@@ -32,6 +32,7 @@ body {
 }
 
 #mycanvas {
+<<<<<<< HEAD
     width: 13%;
 }
 
@@ -66,3 +67,43 @@ video {
   }
 
   
+||||||| 73c76ef
+    display: block;
+    margin: 0 auto;
+}
+=======
+    width: 13%;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-size: 16px;
+  }
+  #readmore {
+      position: fixed;
+      top: 95%;
+      left: 48%;
+      text-align: center;
+  }
+
+  
+>>>>>>> 09aef838d0550c06476571ad1698d5070298839b
