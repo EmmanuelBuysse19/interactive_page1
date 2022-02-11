@@ -11,8 +11,8 @@
     let paddleX = (canvas.width-paddleWidth)/2;
     let rightPressed = false;
     let leftPressed = false;
-    let brickRowCount = 5;
-    let brickColumnCount = 3;
+    let brickRowCount = 3;
+    let brickColumnCount = 4;
     let brickWidth = 75;
     let brickHeight = 20;
     let brickPadding = 10;
@@ -114,7 +114,7 @@
     const drawLives = () => {
         ctx.font = "16px Georgia";
         ctx.fillStyle = "#02bc03";
-        ctx.fillText("Lives: "+lives, canvas.width-160, 20);
+        ctx.fillText("Lives: "+lives, canvas.width-91, 20);
     }
     // here everyting goes into this function and will be drawed when invoked //
     const draw = () => {
@@ -165,3 +165,8 @@
     }
     //invoke function// 
     draw();
+
+    // make the canvas responsive //
+    let canvass = document.getElementById('mycanvas');
+    let heightRatio = 1.5;
+    canvass.height = canvass.width * heightRatio;
