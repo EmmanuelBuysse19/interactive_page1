@@ -1,0 +1,22 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+header {
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 5px;
+    color: red;
+}
+
+body {
+    text-align: center;
+    overflow: auto;
+}
