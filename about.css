@@ -1,0 +1,13 @@
+body {
+    background-color: #505050;
+}
+header {
+    color: red;
+}
+nav {
+    background-color: #1FE09D;
+}
+ul a {
+    font-size: 16px;
+    color: #E01F62;
+}
