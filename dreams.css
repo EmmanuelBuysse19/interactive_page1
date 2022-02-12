@@ -1,0 +1,132 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    overflow: auto;
+}
+
+@keyframes slide {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+header {
+    background-color: #00ff00;
+    margin-top: 0px;
+    animation-name: slide;
+    animation-duration: 5s;
+    font-size: 24px;
+    color: black;
+    padding-top: 5px;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    margin-top: 100px;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-family: Helvetica;
+    font-size: 2rem;
+    font-size: 16px;
+  }
+
+a:link{
+    text-decoration:none;
+    color:#008b45;
+}
+    
+a:visited {
+    color: yellow;
+}   
+
+a:hover{
+    color:#00ff00;
+}
+
+p, ul{
+    color: yellow;
+    font-size: 130%;
+}
+
+h5 {
+    color: yellow;
+    font-size: 120%;
+}
+span{
+    background-color: blue;
+    opacity: 0.8;
+}
+
+.color, h2, h1, h3, h4 {
+    color: yellow;
+}
+
+
+  .ball {
+    cursor: crosshair;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3673cf;
+    box-shadow: inset -5px -5px 5px rgba(0,0,0,.6), 15px 15px 2px rgba(0,0,0,.04);
+    position: absolute;
+    -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -o-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+  }
+  
+  @-webkit-keyframes moveX {
+    from { left: 50px; } to { left: 680px; }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left: 680px; }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left: 680px; }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: 680px; }
+  }
+  @-webkit-keyframes moveY {
+    from { top: 400; } to { top: 600px; }
+  }
+  @-moz-keyframes moveY {
+    from { top: 400; } to { top: 600px; }
+  }
+  @-o-keyframes moveY {
+    from { top: 400px; } to { top: 600px; }
+  }
+  @keyframes moveY {
+    from { top: 400px; } to { top: 600px; }
+  }
+ 
+
+ 
