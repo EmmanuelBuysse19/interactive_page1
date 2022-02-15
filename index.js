@@ -109,12 +109,12 @@
     const drawScore = ()  => {
         ctx.font = "16px Georgia";
         ctx.fillStyle = "#02bc03";
-        ctx.fillText("Score: "+score, 30, 20);
+        ctx.fillText("Score: "+ score, 30, 20);
     }
     const drawLives = () => {
         ctx.font = "16px Georgia";
         ctx.fillStyle = "#02bc03";
-        ctx.fillText("Lives: "+lives, canvas.width-91, 20);
+        ctx.fillText("Lives: "+ lives, canvas.width-91, 20);
     }
     // here everyting goes into this function and will be drawed when invoked //
     const draw = () => {
@@ -139,7 +139,6 @@
             else {
                 lives--;
                 if(!lives) {
-                    alert("YOU LOST, TRY AGAIN!");
                     document.location.reload();
                 }
                 else {

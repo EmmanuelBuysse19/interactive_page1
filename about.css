@@ -1,13 +1,43 @@
 body {
-    background-color: #505050;
+    background-color: #07286D;
 }
 header {
     color: red;
 }
-nav {
-    background-color: #1FE09D;
-}
-ul a {
+
+.a {
     font-size: 16px;
-    color: #E01F62;
+    color: #738595;
+    text-decoration: none;
+    background-color: paleturquoise;
+    padding: 10px 8px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 70%;
+}
+img {
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.contact {
+    background-color: #fff4f2;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+}
+.contact:hover {
+    background-color: #d6fffe;
+}
+.a:hover {
+    background-color: #fff4f2;;
+}
+
+p {
+    color: #fff4f2;
+    font-size: 18px;
 }

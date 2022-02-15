@@ -1,0 +1,41 @@
+button {
+    width: 80;
+    height: 80;
+    font-size: 25;
+    border: solid;
+    margin-left: 10px;
+}
+  
+.textinput {
+    width: 590;
+    height: 50;
+    border: solid;
+    font-size: 25;
+    color: black;
+    text-align: right;
+}
+  
+.main {
+  position: absolute;
+    border: solid;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    margin-left: 500px;
+    margin-top: 150px;
+    width: 500px;
+    height: 350px;
+}
+
+#info {
+    text-align: right;
+}
+input {
+    margin-left: 100px;
+}
+
+button:hover {
+    color: gray;
+}
+
+body {
+    background-color: antiquewhite;
+}
